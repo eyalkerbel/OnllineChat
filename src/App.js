@@ -1,26 +1,66 @@
-import React from 'react';
+
+
+
+
+
+
+
+
+
+import React, { Component } from 'react';
+import { Chat, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-popup';
+import axios from 'axios';
 import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+class App extends Component {
+  componentDidMount() {
+    addResponseMessage("hello you user!!!");
+  }
+ 
+  handleNewUserMessage = (newMessage) => {
+    axios.request({
+            method: 'POST',
+            url: '/GetAnswer',
+            data: {
+              message: newMessage
+            }
+          }).then(res => { 
+            console.log(res);
+            addResponseMessage(res.data.serverMessage);
+          }).catch((err)=>    console.log("unsucessfull",err));
+  }
+ 
+  render() {
+    return (
+      <div className="App">
+        <Chat
+          handleNewUserMessage={this.handleNewUserMessage}
+          profileAvatar={logo}
+          title="Chat Online"
+          subtitle="And my cool subtitle"
+        />
+      </div>
+    );
+  }
 }
-
+ 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
