@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/OnllineChat/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/OnllineChat/static/js/main.51dce03a.chunk.js",
+    "main.js.map": "/OnllineChat/static/js/main.51dce03a.chunk.js.map",
+    "runtime-main.js": "/OnllineChat/static/js/runtime-main.36dee906.js",
+    "runtime-main.js.map": "/OnllineChat/static/js/runtime-main.36dee906.js.map",
+    "static/js/2.2bf5a0d5.chunk.js": "/OnllineChat/static/js/2.2bf5a0d5.chunk.js",
+    "static/js/2.2bf5a0d5.chunk.js.map": "/OnllineChat/static/js/2.2bf5a0d5.chunk.js.map",
+    "index.html": "/OnllineChat/index.html",
+    "precache-manifest.c5071dd1e168332b6573f7a71e579893.js": "/OnllineChat/precache-manifest.c5071dd1e168332b6573f7a71e579893.js",
+    "service-worker.js": "/OnllineChat/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/OnllineChat/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.2bf5a0d5.chunk.js.LICENSE.txt": "/OnllineChat/static/js/2.2bf5a0d5.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/OnllineChat/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36dee906.js",
+    "static/js/2.2bf5a0d5.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.51dce03a.chunk.js"
+  ]
+}
